@@ -1,0 +1,17 @@
+.navbar.navbar-material-blog.navbar-primary.navbar-absolute-top
+  .navbar-image(style="background-image: url('img/technology/unsplash-6.jpg');background-position: center 40%;")
+  .navbar-wrapper.container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/')
+        i.material-icons 
+        != config.title
+    .navbar-collapse.collapse.navbar-responsive-collapse
+      ul.nav.navbar-nav
+        include ../_mixins/nav.pug
+        +menu()
+      ul.nav.navbar-nav.navbar-right
+        +scoial()

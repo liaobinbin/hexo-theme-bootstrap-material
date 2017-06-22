@@ -1,0 +1,26 @@
+# menu
+menu:
+    Archive: /archives/
+    Tag: /tags
+    Link: /links
+# header image
+headerimg: https://cdn.weic96.cn/website/a/15/4545620ec1ce9ee9147a91ab69c06.jpg
+# logo
+logo: /images/logo.jpg
+# config favicon
+favicon: /images/favicon.png
+# scoial username
+scoial:
+    github: https://github.com/liaobinbin
+    weibo:
+    facebook:
+    google-plus:
+    twitter:
+mail: doubiliao@gmail.com
+rss: /atom.xml
+
+
+# copyright year
+year: 2017
+
+version: 2.0.0

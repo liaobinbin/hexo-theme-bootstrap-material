@@ -1,0 +1,18 @@
+//- 菜单
+mixin menu()
+  each value, key in theme.menu
+    li
+      - var re = /^(http|https):\/\/*/gi;
+      - var tar = re.test(value) ? "_blank" : "_self"
+      - var act = !re.test(value) && "/"+page.current_url === value
+      a(href=url_for(value) target=tar)
+          != key
+
+mixin scoial()
+  each value, key in theme.scoial
+    if(value)
+      li
+        a(href=url_for(value) target="_blank")
+          - var icon = "fa-" + key
+            i.fa(class=icon)
+//- 分页

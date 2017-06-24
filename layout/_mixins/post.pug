@@ -1,5 +1,28 @@
 //- 文章列表
 mixin postList()
+  - page.posts.each(function(postItem){
+      section.blog-post
+        .panel.panel-default
+          //- 判断文章是否有头部图片
+          if(postItem.hI)
+            img.img-responsive(src=postItem.hI)
+          .panel-body
+            .blog-post-meta
+              if(postItem.categories.length != 0)
+                span.label.label-light.label-primary #{postItem.categories.data[0].name}
+              else
+                span.label.label-light.label-primary 默认分类
+              p.blog-post-date.pull-right #{date(postItem.date, 'YYYY/MMMM/DD')}
+            .blog-post-content
+              a(href=url_for(postItem.path))
+                h2.blog-post-title #{postItem.title}
+              p
+                != postItem.excerpt
+              a.btn.btn-info(href=url_for(postItem.path)) Read more
+              a.blog-post-share.pull-right(href='#')
+                i.material-icons 
+  - })
+
 
 //- 文章内容块
-mixin post()
+//- mixin post()

@@ -22,5 +22,7 @@ $(function(){
   $("a[href*=#]").click(function(e) {
     e.preventDefault();
   });  
-  
+  $('pre code').each(function(i, block){
+    hljs.highlightBlock(block);
+  })
 });

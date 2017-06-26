@@ -5,25 +5,9 @@ footer.blog-footer
         .col-sm-2
           i.material-icons.brand 
         .col-sm-8.text-center.offset
-          ul.list-inline
-            li
-              a(href='index.html') Home
-            li
-              a(href='page-about.html') About
-            li
-              a(href='doc-buttons.html') Documentation
-            li
-              a(href='page-contact.html') Contact
+          p &copy; #{theme.year}
         .col-md-2.text-right.offset
           ul.list-inline
-            li
-              a(href='#')
-                i.fa.fa-facebook
-            li
-              a(href='#')
-                i.fa.fa-google-plus
-            li
-              a(href='#')
-                i.fa.fa-twitter
+            +scoial()
 
 <button class="material-scrolltop primary" type="button"></button>

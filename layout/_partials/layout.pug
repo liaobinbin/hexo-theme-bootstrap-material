@@ -4,8 +4,11 @@ html(lang=config.language)
     include head.pug
   body
     block navbar
-    
-    block container
+    .container.blog-content
+      .row
+        block container
+      // /.row
+    // /.container
 
     block footer
 

@@ -25,4 +25,19 @@ mixin postList()
 
 
 //- 文章内容块
-//- mixin post()
+mixin post(item)
+  section.blog-post
+    .panel.panel-default
+      if(item.hI)
+              img.img-responsive(src=item.hI)
+      .panel-body
+        .blog-post-meta
+              if(item.categories.length != 0)
+                span.label.label-light.label-primary #{item.categories.data[0].name}
+              else
+                span.label.label-light.label-primary 默认分类
+              p.blog-post-date.pull-right #{date(item.date, 'YYYY/MMMM/DD')}
+        .blog-post-content
+          h2.blog-post-title #{item.title}
+          != item.content
+  // /.blog-post

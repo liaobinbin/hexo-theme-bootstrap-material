@@ -214,6 +214,11 @@ a:focus {
   color: #999;
   margin: 18px auto;
 }
+.blog-post-content p img {
+  display: block;
+  max-width: 100%;
+  margin: 18px auto;
+}
 
 .blog-post-content .btn {
   padding-left: 6px;

@@ -1,5 +1,6 @@
 # hexo-theme-bootstrap-material
 
+不知道该不该继续更新。
 
 # 更新日志
 - 2016-06-27

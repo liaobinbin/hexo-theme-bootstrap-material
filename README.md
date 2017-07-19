@@ -1,6 +1,5 @@
 # hexo-theme-bootstrap-material
 
-
 # 更新日志
 - 2016-06-27
   - 增加文章内容页面布局和单页布局
